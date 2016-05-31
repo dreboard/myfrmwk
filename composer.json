@@ -1,0 +1,10 @@
+{
+  "autoload": {
+        "psr-4": {
+            "MyFrmwk\\app\\core\\": ["./app/core/"],
+            "MyFrmwk\\app\\models\\": ["./app/models/"],
+            "MyFrmwk\\app\\controllers\\": ["./app/controllers/"],
+            "MyFrmwk\\app\\core\\system\\": ["./app/core/system/"]
+        }
+    } 
+}
