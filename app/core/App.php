@@ -8,7 +8,7 @@ namespace  MyFrmwk\app\core;
  */
 class App
 {
-    protected $controller = 'home';
+    protected $controller = '../app/controllers/home';
     
     protected $method = 'index';
     
