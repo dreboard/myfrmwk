@@ -1,18 +1,28 @@
 <?php
-namespace  MyFrmwk\app\core;
-//use MyFrmwk\app\controllers;
+namespace  MyFrmwk\Controllers;
+
+//use MyFrmwk\Controllers;
 /**
+ * My MVC Framework
  *
- * @author andreboard
- *        
+ * @package	MyFrmwk\App
+ * @author	andreboard
+ * @copyright	Copyright (c) 2016
+ * @license	http://opensource.org/licenses/MIT	MIT License
+ * @link	http://codeigniter.com
+ * @since	Version 1.0.0
+ * @filesource
  */
+
 class App
 {
-    protected $controller = 'home';
+    protected $controller = '../app/controllers/home';
     
     protected $method = 'index';
     
     protected $params = [];
+
+    protected $namespace = 'MyFrmwk\Controllers';
 
     /**
      */
@@ -22,7 +32,7 @@ class App
         $url = $this->parseUrl();
         
         if (file_exists('../app/controllers/'.$url[0].'.php')){
-            $this->controller = "MyFrmwk\\app\\controllers\\{$url[0]}";
+            $this->controller = $url[0];
             unset($url[0]);
         }
         
@@ -44,7 +54,8 @@ class App
      * Explode and trim the url to obtain the controller, method and parameters
      * @return string
      */    
-    public function parseUrl(){
+    public function parseUrl()
+    {
         if (isset($_GET['url'])){
             return explode('/', filter_var(rtrim($_GET['url'] , '/'), FILTER_SANITIZE_STRING));
         }

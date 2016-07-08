@@ -1,6 +1,4 @@
 <?php
-namespace MyFrmwk\app\core\system;
-
 /**
  *
  * @author andreboard

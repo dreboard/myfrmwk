@@ -1,8 +1,4 @@
 <?php
-namespace  MyFrmwk\app\core;
-
-use MyFrmwk\app\core\system\InterfaceController;
-
 /**
  *
  * @author andreboard

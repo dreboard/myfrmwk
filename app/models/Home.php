@@ -1,8 +1,4 @@
 <?php
-namespace  MyFrmwk\app\models;
-
-use  MyFrmwk\app\core\Model;
-
 /**
  *
  * @author andreboard

@@ -1,8 +1,4 @@
 <?php
-namespace  MyFrmwk\app\controllers;
-
-use core\Controller;
-
 /**
  * The default controller
  * @author andreboard
