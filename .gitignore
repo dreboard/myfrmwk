@@ -3,3 +3,5 @@
 /.vagrant/
 /tests/
 /docs/
+/.idea
+/.settings
