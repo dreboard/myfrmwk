@@ -69,18 +69,19 @@ mysql -uroot -p$DBPASSWD -e "grant all privileges on $DBNAME.* to '$DBUSER'@'loc
 # create project folder
 sudo chmod -R 755 /var/www
 sudo mkdir "/var/www/$SITENAME"
+sudo mkdir "/var/www/$SITENAME/log"
 
 # setup hosts file
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
     ServerName $SITENAME.dev
     DocumentRoot /var/www/$SITENAME/public
-    ErrorLog /var/www/$SITENAME/apache.error.log
-    CustomLog /var/www/$SITENAME/apache.access.log common
+    ErrorLog /var/www/$SITENAME/log/apache.error.log
+    CustomLog /var/www/$SITENAME/log/apache.access.log common
     php_flag log_errors on
     php_flag display_errors on
     php_value error_reporting 2147483647
-    php_value error_log /var/www/$SITENAME/php.error.log
+    php_value error_log /var/www/$SITENAME/log/php.error.log
    <Directory "/var/www/$SITENAME">
         AllowOverride All
         Require all granted

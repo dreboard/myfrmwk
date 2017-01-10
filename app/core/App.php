@@ -9,7 +9,7 @@ namespace  MyFrmwk\Controllers;
  * @author	andreboard
  * @copyright	Copyright (c) 2016
  * @license	http://opensource.org/licenses/MIT	MIT License
- * @link	http://codeigniter.com
+ * @link
  * @since	Version 1.0.0
  * @filesource
  */

@@ -6,19 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/type-resolver/src', $vendorDir . '/phpdocumentor/reflection-docblock/src'),
-    'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
-    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
-    'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
-    'Symfony\\Component\\DependencyInjection\\' => array($vendorDir . '/symfony/dependency-injection'),
-    'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
-    'PHP_CodeSniffer\\Tests\\' => array($vendorDir . '/squizlabs/php_codesniffer/tests'),
-    'PHP_CodeSniffer\\' => array($vendorDir . '/squizlabs/php_codesniffer/src'),
-    'PDepend\\' => array($vendorDir . '/pdepend/pdepend/src/main/php/PDepend'),
     'MyFrmwk\\app\\models\\' => array($baseDir . '/app/models'),
     'MyFrmwk\\app\\core\\system\\' => array($baseDir . '/app/core/system'),
     'MyFrmwk\\app\\core\\' => array($baseDir . '/app/core'),
     'MyFrmwk\\app\\controllers\\' => array($baseDir . '/app/controllers'),
-    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
-    'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );
