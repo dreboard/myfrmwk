@@ -4,7 +4,7 @@
  * @author andreboard
  *        
  */
-class Contact extends Controller
+class Contact_controller extends Controller
 {
 
     /**

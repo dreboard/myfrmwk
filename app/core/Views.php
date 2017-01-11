@@ -13,6 +13,15 @@ class Views
     {}
 
     /**
+     * @param $view
+     * @param $data
+     */
+    public static function getView($view, $data = array())
+    {
+        require_once '../app/views/'.$view.'.php';
+    }
+
+    /**
      */
     function __destruct()
     {}

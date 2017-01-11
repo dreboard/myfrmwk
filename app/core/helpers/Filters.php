@@ -33,6 +33,7 @@ class Filters
 
     /**
      */
+
     function __destruct()
     {}
 }

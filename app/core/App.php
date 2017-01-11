@@ -30,12 +30,14 @@ class App
     {
        
         $url = $this->parseUrl();
-        if (file_exists('../app/controllers/'.$url[0].'.php')){
+        if (file_exists(CONTROLLER_PATH.'controllers/'.ucfirst($url[0]).'_controller.php')){
             $this->controller = $url[0];
             unset($url[0]);
         }
-        require_once '../app/controllers/'.$this->controller.'.php';
-        $this->controller = new $this->controller;
+        require_once CONTROLLER_PATH.'controllers/'.ucfirst($this->controller).'_controller.php';
+
+        $controllerName = ucfirst($this->controller).'_controller';
+        $this->controller = new $controllerName;
         
         if (isset($url[1])){
             if (method_exists($this->controller, $url[1])){

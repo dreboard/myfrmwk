@@ -5,18 +5,22 @@
  * @author andreboard
  *        
  */
-class Home extends Controller
+class User_controller extends Controller
 {
 
     /**
      */
     public function __construct()
-    {}
-    
+    {$this->getModel('User');}
+
     public function index($params = "")
     {
-        echo "Im Home";
-        $this->getModel('User');
+
+        $data['title'] = 'User Home Page';
+        $data['text'] = "Im Home";
+        Views::getView('home', $data);
+
+
     }
     
     public function test()

@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Master controller
  * @author andreboard
  *        
  */
@@ -25,6 +25,7 @@ class Controller
         }
         
         $this->model = new $this->model;
+        return $model;
     }
 
     /**
