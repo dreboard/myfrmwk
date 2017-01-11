@@ -29,26 +29,33 @@ class App
     public function __construct()
     {
        
-        $url = $this->parseUrl();
-        if (file_exists(CONTROLLER_PATH.'controllers/'.ucfirst($url[0]).'_controller.php')){
-            $this->controller = $url[0];
-            unset($url[0]);
-        }
-        require_once CONTROLLER_PATH.'controllers/'.ucfirst($this->controller).'_controller.php';
-
-        $controllerName = ucfirst($this->controller).'_controller';
-        $this->controller = new $controllerName;
-        
-        if (isset($url[1])){
-            if (method_exists($this->controller, $url[1])){
-                $this->method = $url[1];
-                unset($url[1]);
+        try {
+            $url = $this->parseUrl();
+            if (file_exists('../app/controllers/'.ucfirst($url[0]).'_controller.php')){
+                $this->controller = $url[0];
+                unset($url[0]);
             }
+            require_once '../app/controllers/'.ucfirst($this->controller).'_controller.php';
+
+            $controllerName = ucfirst($this->controller).'_controller';
+            $this->controller = new $controllerName;
+
+            if (isset($url[1])){
+                if (method_exists($this->controller, $url[1])){
+                    $this->method = $url[1];
+                    unset($url[1]);
+                }
+            }
+
         }
-        
-        $this->params = $url ? array_values($url) : [];
-        
-        call_user_func_array([$this->controller, $this->method], $this->params);
+        catch (Exception $e){
+            $e->getMessage();
+        }
+        finally{
+            $this->params = $url ? array_values($url) : [];
+            call_user_func_array([$this->controller, $this->method], $this->params);
+        }
+
     }
     
     /**

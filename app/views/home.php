@@ -13,7 +13,7 @@
                 <h1 class="page-header"><?= $data['title'] ?>
                     <small><?= $data['text'] ?> <?= SITE_NAME ?></small>
                 </h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat.</p>
                 <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
             </div>
             <!-- /.col-md-4 -->
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="well text-center">
-                    This is a well that is a great spot for a business tagline or phone number for easy access!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.
                 </div>
             </div>
             <!-- /.col-lg-12 -->
@@ -36,7 +36,7 @@
         <!-- Content Row -->
         <div class="row">
             <div class="col-md-4">
-
+                <h2>Heading 1</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
                 <a class="btn btn-default" href="#">More Info</a>
             </div>
@@ -60,7 +60,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; <?= SITE_NAME. " ". date('Y') ?></p>
                 </div>
             </div>
         </footer>

@@ -3,16 +3,19 @@
 /**
  * The default controller
  * @author andreboard
- *        
+ *
  */
-class Home extends Controller
+class Home_controller extends Controller
 {
+    protected $user_model;
 
     /**
      */
     public function __construct()
-    {$this->getModel('User');}
-    
+    {
+        $this->user_model = $this->getModel('User');
+    }
+
     public function index($params = "")
     {
 
@@ -22,19 +25,20 @@ class Home extends Controller
 
 
     }
-    
-    public function test()
+
+    /**
+     *
+     */
+    public function about()
     {
-        echo "Tested";
+        $data['title'] = 'About Page';
+        $data['text'] = "Im about";
+        Views::getView('home', $data);
     }
 
     /**
-     * Generic routing
-     * @param string $view
      */
-    function load($view)
-    {
-        Views::getView($view);
-    }
+    function __destruct()
+    {}
 }
 

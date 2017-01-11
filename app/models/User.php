@@ -14,7 +14,7 @@ class User extends Model
     {
         parent::__construct();
 
-        echo ' The User Model()';
+        //echo ' The User Model()';
     }
 
     /**
