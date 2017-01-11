@@ -1,5 +1,5 @@
 <?php
-//namespace MyFrmwk\Controllers;
+//namespace App\Core;
 /**
  * The default controller
  * @author andreboard
@@ -29,8 +29,12 @@ class Home extends Controller
     }
 
     /**
+     * Generic routing
+     * @param string $view
      */
-    function __destruct()
-    {}
+    function load($view)
+    {
+        Views::getView($view);
+    }
 }
 

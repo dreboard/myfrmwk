@@ -11,9 +11,9 @@
         <!-- /.col-md-8 -->
         <div class="col-md-4">
             <h1 class="page-header"><?= $data['title'] ?>
-                <small><?= $data['text'] ?> </small>
+                <small><?= $data['text'] ?> <?= SITE_NAME ?></small>
             </h1>
-            <p><?= SITE_NAME ?> This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+            <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
             <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
         </div>
         <!-- /.col-md-4 -->
@@ -68,6 +68,3 @@
 </div>
 <!-- /.container -->
 <?php require_once 'sections/footer.php'; ?>
-
-
-

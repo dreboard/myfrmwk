@@ -1,5 +1,5 @@
 <?php
-//namespace MyFrmwk\Controllers;
+//namespace App\Core;
 /**
  * The default controller
  * @author andreboard
@@ -11,7 +11,9 @@ class User_controller extends Controller
     /**
      */
     public function __construct()
-    {$this->getModel('User');}
+    {
+        $this->getModel('User');
+    }
 
     public function index($params = "")
     {
