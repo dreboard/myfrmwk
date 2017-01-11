@@ -25,9 +25,10 @@ class Filters
      * @param mixed $value
      * @returns mixed $value
      */
-    public static function post($value)
+    public static function input_post($value)
     {
-        return trim(htmlentities(strip_tags($value)));
+        $value = filter_input(INPUT_POST, $value, FILTER_SANITIZE_SPECIAL_CHARS);
+        return trim($value);
     }
 
     /**

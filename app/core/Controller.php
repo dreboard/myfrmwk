@@ -4,7 +4,7 @@
  * @author andreboard
  *        
  */
-abstract class Controller implements InterfaceController
+class Controller
 {
 
     public $model;
@@ -12,13 +12,15 @@ abstract class Controller implements InterfaceController
      */
     public function __construct()
     {}
-    
-    abstract protected function index();
-    
+
+
+    /**
+     * @param $model
+     */
     public function getModel($model){
         
         if (file_exists('../app/models/'.$model.'.php')){
-            $this->model = "MyFrmwk\\app\\models\\{$model}";
+            $this->model = $model;
 
         }
         

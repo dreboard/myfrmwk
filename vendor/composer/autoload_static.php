@@ -11,8 +11,8 @@ class ComposerStaticInit451fa6618bd20d4e0c516711f7afe66d
         array (
             'MyFrmwk\\app\\models\\' => 19,
             'MyFrmwk\\app\\core\\system\\' => 24,
+            'MyFrmwk\\app\\core\\helpers\\' => 25,
             'MyFrmwk\\app\\core\\' => 17,
-            'MyFrmwk\\app\\controllers\\' => 24,
         ),
     );
 
@@ -25,14 +25,27 @@ class ComposerStaticInit451fa6618bd20d4e0c516711f7afe66d
         array (
             0 => __DIR__ . '/../..' . '/app/core/system',
         ),
+        'MyFrmwk\\app\\core\\helpers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/controllers',
+        ),
         'MyFrmwk\\app\\core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/core',
         ),
-        'MyFrmwk\\app\\controllers\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app/controllers',
-        ),
+    );
+
+    public static $classMap = array (
+        'App' => __DIR__ . '/../..' . '/app/core/App.php',
+        'Contact' => __DIR__ . '/../..' . '/app/controllers/Contact.php',
+        'Controller' => __DIR__ . '/../..' . '/app/core/Controller.php',
+        'Home' => __DIR__ . '/../..' . '/app/controllers/Home.php',
+        'InterfaceController' => __DIR__ . '/../..' . '/app/core/system/InterfaceController.php',
+        'Login' => __DIR__ . '/../..' . '/app/controllers/Login.php',
+        'Model' => __DIR__ . '/../..' . '/app/core/Model.php',
+        'MyFrmwk\\App\\Core\\Helpers\\Filters' => __DIR__ . '/../..' . '/app/core/helpers/Filters.php',
+        'User' => __DIR__ . '/../..' . '/app/models/User.php',
+        'Views' => __DIR__ . '/../..' . '/app/core/Views.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -40,6 +53,7 @@ class ComposerStaticInit451fa6618bd20d4e0c516711f7afe66d
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit451fa6618bd20d4e0c516711f7afe66d::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit451fa6618bd20d4e0c516711f7afe66d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit451fa6618bd20d4e0c516711f7afe66d::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,5 +1,5 @@
 <?php
-namespace MyFrmwk\Controllers;
+//namespace MyFrmwk\Controllers;
 /**
  * The default controller
  * @author andreboard

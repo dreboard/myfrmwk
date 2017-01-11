@@ -8,6 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'MyFrmwk\\app\\models\\' => array($baseDir . '/app/models'),
     'MyFrmwk\\app\\core\\system\\' => array($baseDir . '/app/core/system'),
+    'MyFrmwk\\app\\core\\helpers\\' => array($baseDir . '/app/controllers'),
     'MyFrmwk\\app\\core\\' => array($baseDir . '/app/core'),
-    'MyFrmwk\\app\\controllers\\' => array($baseDir . '/app/controllers'),
 );

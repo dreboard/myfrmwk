@@ -1,11 +1,12 @@
 {
   "autoload": {
         "psr-4": {
-            "MyFrmwk\\app\\core\\": ["./app/core/"],
-            "MyFrmwk\\app\\models\\": ["./app/models/"],
-            "MyFrmwk\\app\\controllers\\": ["./app/controllers/"],
-            "MyFrmwk\\app\\core\\system\\": ["./app/core/system/"]
-        }
+            "MyFrmwk\\app\\core\\": ["./app/core"],
+            "MyFrmwk\\app\\models\\": ["./app/models"],
+            "MyFrmwk\\app\\core\\helpers\\": ["./app/controllers"],
+            "MyFrmwk\\app\\core\\system\\": ["./app/core/system"]
+        },
+    "classmap": ["app/controllers", "app/core", "app/models"]
     },
   "require": {
     "phpunit/phpunit": "5.5.x-dev",
