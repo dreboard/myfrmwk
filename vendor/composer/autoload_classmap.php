@@ -7,12 +7,13 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App' => $baseDir . '/app/core/App.php',
-    'Contact' => $baseDir . '/app/controllers/Contact.php',
+    'Contact_controller' => $baseDir . '/app/controllers/Contact_controller.php',
     'Controller' => $baseDir . '/app/core/Controller.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
-    'Home' => $baseDir . '/app/controllers/Home_controller.php',
+    'Home' => $baseDir . '/app/models/Home.php',
+    'Home_controller' => $baseDir . '/app/controllers/Home_controller.php',
     'InterfaceController' => $baseDir . '/app/core/system/InterfaceController.php',
     'Login' => $baseDir . '/app/controllers/Login.php',
     'Model' => $baseDir . '/app/core/Model.php',

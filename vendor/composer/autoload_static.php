@@ -207,7 +207,7 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
         ),
         'MyFrmwk\\app\\core\\helpers\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/controllers',
+            0 => __DIR__ . '/../..' . '/app/core/helpers',
         ),
         'MyFrmwk\\app\\core\\' => 
         array (
@@ -356,12 +356,13 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
 
     public static $classMap = array (
         'App' => __DIR__ . '/../..' . '/app/core/App.php',
-        'Contact' => __DIR__ . '/../..' . '/app/controllers/Contact.php',
+        'Contact_controller' => __DIR__ . '/../..' . '/app/controllers/Contact_controller.php',
         'Controller' => __DIR__ . '/../..' . '/app/core/Controller.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
-        'Home' => __DIR__ . '/../..' . '/app/controllers/Home_controller.php',
+        'Home' => __DIR__ . '/../..' . '/app/models/Home.php',
+        'Home_controller' => __DIR__ . '/../..' . '/app/controllers/Home_controller.php',
         'InterfaceController' => __DIR__ . '/../..' . '/app/core/system/InterfaceController.php',
         'Login' => __DIR__ . '/../..' . '/app/controllers/Login.php',
         'Model' => __DIR__ . '/../..' . '/app/core/Model.php',

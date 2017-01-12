@@ -5,23 +5,19 @@ namespace  MyFrmwk\App\Core\Helpers;
  * My MVC Framework
  *
  * @package	MyFrmwk
- * @author	andreboard
+ * @author	andre board
  * @copyright	Copyright (c) 2016
  * @license	http://opensource.org/licenses/MIT	MIT License
- * @link	http://codeigniter.com
+ * @link
  * @since	Version 1.0.0
  * @filesource
  */
-class Filters
+abstract class Filters
 {
-
-    /**
-     */
-    public function __construct()
-    {}
 
     /*
      * Input post filter
+     *
      * @param mixed $value
      * @returns mixed $value
      */
@@ -31,10 +27,16 @@ class Filters
         return trim($value);
     }
 
-    /**
+    /*
+     * Input get filter
+     *
+     * @param mixed $value
+     * @returns mixed $value
      */
-
-    function __destruct()
-    {}
+    public static function input_get($value)
+    {
+        $value = filter_input(INPUT_GET, $value, FILTER_SANITIZE_SPECIAL_CHARS);
+        return trim($value);
+    }
 }
 

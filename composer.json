@@ -3,7 +3,7 @@
         "psr-4": {
             "MyFrmwk\\app\\core\\": ["./app/core"],
             "MyFrmwk\\app\\models\\": ["./app/models"],
-            "MyFrmwk\\app\\core\\helpers\\": ["./app/controllers"],
+            "MyFrmwk\\app\\core\\helpers\\": ["./app/core/helpers"],
             "MyFrmwk\\app\\core\\system\\": ["./app/core/system"]
         },
     "files": [ "app/config/constants.php", "app/config/db.php", "app/config/functions.php", "app/config/settings.php" ],

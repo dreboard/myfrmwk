@@ -6,3 +6,5 @@
 /.idea
 /.settings
 /log
+!/vendor/composer/
+!/vendor/autoload.php

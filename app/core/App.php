@@ -16,15 +16,19 @@
 
 class App
 {
+
+    /** @var string Default controller */
     protected $controller = 'home';
-    
+
+    /** @var string Default method */
     protected $method = 'index';
-    
+
+    /** @var array Holds method arguments */
     protected $params = [];
 
-    protected $namespace = 'MyFrmwk';
 
     /**
+     * Parse incoming get request and load called controller
      */
     public function __construct()
     {
@@ -46,13 +50,12 @@ class App
                     unset($url[1]);
                 }
             }
-
+            $this->params = $url ? array_values($url) : [];
         }
         catch (Exception $e){
             $e->getMessage();
         }
         finally{
-            $this->params = $url ? array_values($url) : [];
             call_user_func_array([$this->controller, $this->method], $this->params);
         }
 
@@ -60,7 +63,9 @@ class App
     
     /**
      * Explode and trim the url to obtain the controller, method and parameters
-     * @return string
+     *
+     * @uses $_GET array
+     * @return array
      */    
     public function parseUrl()
     {
