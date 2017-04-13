@@ -8,3 +8,5 @@
 /log
 !/vendor/composer/
 !/vendor/autoload.php
+/ubuntu-xenial-16.04-cloudimg-console.log
+/composer.phar

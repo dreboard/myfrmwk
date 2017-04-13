@@ -1,13 +1,24 @@
 #!/usr/bin/env bash
 
-	echo "================= START INSTALL-dev_tools.SH $(date +"%r") ================="
-	echo " "
+echo "================= START INSTALL-dev_tools.SH $(date +"%r") ================="
+echo " "
 
-	sudo yum -y install nano
-	# Install composer
-	curl -sS https://getcomposer.org/installer | php
-	# Move it to /usr/local/bin/
-	sudo mv composer.phar /usr/local/bin/composer
+##########################################################
+#				Install Extras
+##########################################################
+# install Composer
+curl -s https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
 
-	echo ""
-	echo "================= End INSTALL-dev_tools.SH $(date +"%r") ================="
+sudo apt-get install -y snmp
+
+# Adding NodeJS from Nodesource. This will Install NodeJS and npm
+sudo apt-add-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install -y nodejs
+
+# Installing Bower and Gulp
+sudo npm install -g bower gulp
+sudo apt-get -y autoremove
+echo ""
+echo "================= End INSTALL-dev_tools.SH $(date +"%r") ================="

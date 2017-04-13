@@ -7,11 +7,12 @@ namespace Composer\Autoload;
 class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
 {
     public static $files = array (
-        'a241f7e31cfa9fbd3d37a58e5c08c4ea' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/autoload.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a241f7e31cfa9fbd3d37a58e5c08c4ea' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/autoload.php',
         'fe1bcd0336136e435eaf197895daf81a' => __DIR__ . '/..' . '/nikic/php-parser/lib/bootstrap.php',
         '742b7e606e92b28dd726e835467f413a' => __DIR__ . '/..' . '/herrera-io/json/src/lib/json_version.php',
         'f0e9d233388e461ee3c460665eb265f0' => __DIR__ . '/..' . '/herrera-io/phar-update/src/lib/constants.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '87955365edefab10a3cd0eaab1d67e1b' => __DIR__ . '/../..' . '/app/config/constants.php',
         '7ea5b2f2c7d076c0ea2da8d92b277b75' => __DIR__ . '/../..' . '/app/config/db.php',
         'eaf97fed037432f0f2a151c8758cfcd3' => __DIR__ . '/../..' . '/app/config/functions.php',
@@ -249,13 +250,13 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
             'phpDocumentor' => 
             array (
                 0 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-                1 => __DIR__ . '/..' . '/phpdocumentor/graphviz/src',
-                2 => __DIR__ . '/..' . '/phpdocumentor/graphviz/tests/unit',
-                3 => __DIR__ . '/..' . '/phpdocumentor/fileset/src',
-                4 => __DIR__ . '/..' . '/phpdocumentor/fileset/tests/unit',
-                5 => __DIR__ . '/..' . '/phpdocumentor/reflection/src',
-                6 => __DIR__ . '/..' . '/phpdocumentor/reflection/tests/unit',
-                7 => __DIR__ . '/..' . '/phpdocumentor/reflection/tests/mocks',
+                1 => __DIR__ . '/..' . '/phpdocumentor/reflection/src',
+                2 => __DIR__ . '/..' . '/phpdocumentor/reflection/tests/unit',
+                3 => __DIR__ . '/..' . '/phpdocumentor/reflection/tests/mocks',
+                4 => __DIR__ . '/..' . '/phpdocumentor/graphviz/src',
+                5 => __DIR__ . '/..' . '/phpdocumentor/graphviz/tests/unit',
+                6 => __DIR__ . '/..' . '/phpdocumentor/fileset/src',
+                7 => __DIR__ . '/..' . '/phpdocumentor/fileset/tests/unit',
                 8 => __DIR__ . '/..' . '/phpdocumentor/phpdocumentor/src',
                 9 => __DIR__ . '/..' . '/phpdocumentor/phpdocumentor/tests/unit',
             ),
@@ -328,6 +329,10 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
             'Herrera\\Json' => 
             array (
                 0 => __DIR__ . '/..' . '/herrera-io/json/src/lib',
+            ),
+            'HTMLPurifier' => 
+            array (
+                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
             ),
         ),
         'D' => 

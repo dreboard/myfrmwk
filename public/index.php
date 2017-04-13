@@ -1,7 +1,7 @@
 <?php
 //use MyFrmwk\Controllers;
 
-if ($_SERVER['SERVER_ADDR'] === '192.168.33.19'){
+if ($_SERVER['SERVER_ADDR'] === '127.0.0.1'){
     define('ENVIRONMENT', 'development');
     error_reporting(E_ALL);
 } else {
