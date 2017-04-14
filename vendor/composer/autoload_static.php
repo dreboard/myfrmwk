@@ -13,10 +13,10 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
         '742b7e606e92b28dd726e835467f413a' => __DIR__ . '/..' . '/herrera-io/json/src/lib/json_version.php',
         'f0e9d233388e461ee3c460665eb265f0' => __DIR__ . '/..' . '/herrera-io/phar-update/src/lib/constants.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
-        '87955365edefab10a3cd0eaab1d67e1b' => __DIR__ . '/../..' . '/app/config/constants.php',
         '7ea5b2f2c7d076c0ea2da8d92b277b75' => __DIR__ . '/../..' . '/app/config/db.php',
-        'eaf97fed037432f0f2a151c8758cfcd3' => __DIR__ . '/../..' . '/app/config/functions.php',
         '1033856ee9da6129d6ebc2c154f9e70f' => __DIR__ . '/../..' . '/app/config/settings.php',
+        '87955365edefab10a3cd0eaab1d67e1b' => __DIR__ . '/../..' . '/app/config/constants.php',
+        'eaf97fed037432f0f2a151c8758cfcd3' => __DIR__ . '/../..' . '/app/config/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -372,6 +372,7 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
         'Login' => __DIR__ . '/../..' . '/app/controllers/Login.php',
         'Model' => __DIR__ . '/../..' . '/app/core/Model.php',
         'MyFrmwk\\App\\Core\\Helpers\\Filters' => __DIR__ . '/../..' . '/app/core/helpers/Filters.php',
+        'MyFrmwk\\App\\Core\\Helpers\\MySessions' => __DIR__ . '/../..' . '/app/core/helpers/MySessions.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',

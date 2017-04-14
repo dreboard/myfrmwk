@@ -8,10 +8,19 @@ class Controller
 {
 
     public $model;
+    protected $purifier;
+    
     /**
      */
     public function __construct()
-    {}
+    {
+	    $config = HTMLPurifier_Config::createDefault();
+	    $config->set('HTML.AllowedElements', 'b,i,p,br,ul,ol,li');
+	    $config->set('Attr.AllowedClasses', '');
+	    $config->set('HTML.AllowedAttributes', '');
+	    $config->set('AutoFormat.RemoveEmpty', true);
+	    $this->purifier = new HTMLPurifier($config);
+    }
 
 
     /**

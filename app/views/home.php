@@ -14,7 +14,12 @@
                     <small><?= $data['text'] ?> <?= SITE_NAME ?></small>
                 </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat.</p>
-                <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+                <?php
+                if(isset($_SESSION['var1'])){
+	                echo $_SESSION['var1'];
+                }
+                ?>
+	            <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
             </div>
             <!-- /.col-md-4 -->
         </div>

@@ -13,13 +13,14 @@ class Home_controller extends Controller
      */
     public function __construct()
     {
+    	parent::__construct();
         $this->user_model = $this->getModel('User');
     }
 
     public function index($params = "")
     {
 
-        $data['title'] = 'Home Page';
+        $data['title'] = $this->purifier->purify('Home Page');
         $data['text'] = "Im Home";
         Views::getView('home', $data);
 

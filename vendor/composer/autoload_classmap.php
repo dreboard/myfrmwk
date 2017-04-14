@@ -18,6 +18,7 @@ return array(
     'Login' => $baseDir . '/app/controllers/Login.php',
     'Model' => $baseDir . '/app/core/Model.php',
     'MyFrmwk\\App\\Core\\Helpers\\Filters' => $baseDir . '/app/core/helpers/Filters.php',
+    'MyFrmwk\\App\\Core\\Helpers\\MySessions' => $baseDir . '/app/core/helpers/MySessions.php',
     'PHPUnit\\Framework\\TestCase' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
     'PHPUnit_Exception' => $vendorDir . '/phpunit/phpunit/src/Exception.php',
     'PHPUnit_Extensions_GroupTestSuite' => $vendorDir . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',

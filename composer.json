@@ -6,7 +6,7 @@
             "MyFrmwk\\app\\core\\helpers\\": ["./app/core/helpers"],
             "MyFrmwk\\app\\core\\system\\": ["./app/core/system"]
         },
-    "files": [ "app/config/constants.php", "app/config/db.php", "app/config/functions.php", "app/config/settings.php" ],
+    "files": [ "app/config/db.php", "app/config/settings.php", "app/config/constants.php", "app/config/functions.php" ],
     "classmap": ["app/controllers/", "app/core/", "app/models/"]
     },
   "require": {

@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+	<meta http-equiv="expires" content="Sun, 01 Jan 1977 00:00:00 GMT"/>
+	<meta http-equiv="pragma" content="no-cache" />
 
     <title>My Framework with Basic Bootstrap Template</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.css&v=<?= time();?>" rel="stylesheet">
 
 </head>
 
