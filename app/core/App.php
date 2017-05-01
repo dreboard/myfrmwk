@@ -37,7 +37,7 @@ class App
             $url = $this->parseUrl();
             if (file_exists('../app/controllers/'.ucfirst($url[0]).'_controller.php')){
                 $this->controller = $url[0];
-                unset($url[0]);
+	            unset($url[0]);
             }
             require_once '../app/controllers/'.ucfirst($this->controller).'_controller.php';
 
@@ -51,13 +51,16 @@ class App
                 }
             }
             $this->params = $url ? array_values($url) : [];
+	        call_user_func_array([$this->controller, $this->method], $this->params);
+	        //$new_url = $this->controller.'/'.$this->method.'/'.$this->params;
+	        //print_r($new_url);
+	        //header("Location: {$_SERVER['REQUEST_URI']}.$new_url");
+
         }
-        catch (Exception $e){
+        catch (BadMethodCallException | Exception $e){
             $e->getMessage();
         }
-        finally{
-            call_user_func_array([$this->controller, $this->method], $this->params);
-        }
+
 
     }
     
@@ -67,7 +70,7 @@ class App
      * @uses $_GET array
      * @return array
      */    
-    public function parseUrl()
+    protected function parseUrl()
     {
         if (isset($_GET['url'])){
             return explode('/', filter_var(rtrim($_GET['url'] , '/'), FILTER_SANITIZE_URL));

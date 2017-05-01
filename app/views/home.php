@@ -11,9 +11,16 @@
             <!-- /.col-md-8 -->
             <div class="col-md-4">
                 <h1 class="page-header"><?= $data['title'] ?>
-                    <small><?= $data['text'] ?> <?= SITE_NAME ?></small>
+
+                    <small><?= $data['text'] ?> <?= SITE_NAME; ?></small>
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat.</p>
+                <p>
+	                <br /><?= CONTROLLER_PATH; ?>
+	                <br /><?= dirname(dirname(__FILE__)); ?>
+	                <br><?= $_SERVER['DOCUMENT_ROOT'].basename($_SERVER['PHP_SELF']).'/public/css'; ?>
+
+	                <br><br>
+	                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat.</p>
                 <?php
                 if(isset($_SESSION['var1'])){
 	                echo $_SESSION['var1'];

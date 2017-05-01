@@ -1,12 +1,17 @@
 {
+  "name": "MyFrmwk/MyFrmwk",
+  "description": "My MVC Framework.",
+  "keywords": ["framework", "MyFrmwk"],
+  "license": "MIT",
+  "type": "project",
   "autoload": {
         "psr-4": {
             "MyFrmwk\\app\\core\\": ["./app/core"],
             "MyFrmwk\\app\\models\\": ["./app/models"],
-            "MyFrmwk\\app\\core\\helpers\\": ["./app/core/helpers"],
+            "MyFrmwk\\app\\core\\helpers\\": ["./app/core/helpers", "./app/core/exceptions"],
             "MyFrmwk\\app\\core\\system\\": ["./app/core/system"]
         },
-    "files": [ "app/config/db.php", "app/config/settings.php", "app/config/constants.php", "app/config/functions.php" ],
+    "files": [ "app/config/db.php", "app/config/settings.php", "app/config/constants.php", "app/config/functions.php", "app/core/language/site.php" ],
     "classmap": ["app/controllers/", "app/core/", "app/models/"]
     },
   "require": {

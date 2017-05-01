@@ -36,7 +36,7 @@ return array(
     'PDepend\\' => array($vendorDir . '/pdepend/pdepend/src/main/php/PDepend'),
     'MyFrmwk\\app\\models\\' => array($baseDir . '/app/models'),
     'MyFrmwk\\app\\core\\system\\' => array($baseDir . '/app/core/system'),
-    'MyFrmwk\\app\\core\\helpers\\' => array($baseDir . '/app/core/helpers'),
+    'MyFrmwk\\app\\core\\helpers\\' => array($baseDir . '/app/core/helpers', $baseDir . '/app/core/exceptions'),
     'MyFrmwk\\app\\core\\' => array($baseDir . '/app/core'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'JsonSchema\\' => array($vendorDir . '/justinrainbow/json-schema/src/JsonSchema'),

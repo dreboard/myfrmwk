@@ -17,7 +17,10 @@ class Home_controller extends Controller
         $this->user_model = $this->getModel('User');
     }
 
-    public function index($params = "")
+	/**
+	 * @param string $params
+	 */
+	public function index($params = "")
     {
 
         $data['title'] = $this->purifier->purify('Home Page');
@@ -26,7 +29,12 @@ class Home_controller extends Controller
 
 
     }
-
+	public function test()
+	{
+		$data['title'] = 'Test Page';
+		$data['text'] = "Im testing";
+		Views::getView('home', $data);
+	}
     /**
      *
      */
@@ -37,7 +45,11 @@ class Home_controller extends Controller
         Views::getView('home', $data);
     }
 
-    /**
+    public function __toString() {
+	    return 'home';
+    }
+
+	/**
      */
     function __destruct()
     {}

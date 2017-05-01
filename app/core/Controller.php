@@ -1,8 +1,15 @@
 <?php
+//use MyFrmwk\Controllers;
 /**
- * Master controller
- * @author andreboard
- *        
+ * My MVC Framework
+ *
+ * @package	MyFrmwk\App
+ * @author	andreboard
+ * @copyright	Copyright (c) 2016
+ * @license	http://opensource.org/licenses/MIT	MIT License
+ * @link
+ * @since	Version 1.0.0
+ * @filesource
  */
 class Controller
 {
@@ -26,7 +33,8 @@ class Controller
     /**
      * @param $model
      */
-    public function getModel($model){
+    public function getModel($model)
+    {
         
         if (file_exists('../app/models/'.$model.'.php')){
             $this->model = $model;
