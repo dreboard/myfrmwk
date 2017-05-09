@@ -30,6 +30,7 @@ return array(
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Symfony\\Component\\Config\\' => array($vendorDir . '/symfony/config'),
     'Seld\\JsonLint\\' => array($vendorDir . '/seld/jsonlint/src/Seld/JsonLint'),
+    'Respect\\Validation\\' => array($vendorDir . '/respect/validation/library'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'PHP_CodeSniffer\\Tests\\' => array($vendorDir . '/squizlabs/php_codesniffer/tests'),
     'PHP_CodeSniffer\\' => array($vendorDir . '/squizlabs/php_codesniffer/src'),

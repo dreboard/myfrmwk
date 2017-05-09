@@ -10,6 +10,7 @@
  * @since	Version 1.0.0
  * @filesource
  */
+//namespace MyFrmwk\Core;
 
 class Model
 {

@@ -1,4 +1,5 @@
 <?php
+//namespace MyFrmwk\Core;
 //use MyFrmwk\Controllers;
 /**
  * My MVC Framework

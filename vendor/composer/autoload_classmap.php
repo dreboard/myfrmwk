@@ -18,6 +18,7 @@ return array(
     'Login' => $baseDir . '/app/controllers/Login.php',
     'Model' => $baseDir . '/app/core/Model.php',
     'MyFrmwk\\App\\Core\\Helpers\\Filters' => $baseDir . '/app/core/helpers/Filters.php',
+    'MyFrmwk\\App\\Core\\Helpers\\Input' => $baseDir . '/app/core/helpers/Input.php',
     'MyFrmwk\\App\\Core\\Helpers\\MyFrmwkException' => $baseDir . '/app/core/exceptions/MyFrmwkException.php',
     'MyFrmwk\\App\\Core\\Helpers\\MySessions' => $baseDir . '/app/core/helpers/MySessions.php',
     'PHPUnit\\Framework\\TestCase' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',

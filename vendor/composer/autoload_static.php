@@ -51,6 +51,10 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
             'Symfony\\Component\\Config\\' => 25,
             'Seld\\JsonLint\\' => 14,
         ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -182,6 +186,10 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
         'Seld\\JsonLint\\' => 
         array (
             0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
+        ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
         ),
         'Psr\\Log\\' => 
         array (
@@ -374,6 +382,7 @@ class ComposerStaticInit1c0a79a339c957b4667d1b936bf072f5
         'Login' => __DIR__ . '/../..' . '/app/controllers/Login.php',
         'Model' => __DIR__ . '/../..' . '/app/core/Model.php',
         'MyFrmwk\\App\\Core\\Helpers\\Filters' => __DIR__ . '/../..' . '/app/core/helpers/Filters.php',
+        'MyFrmwk\\App\\Core\\Helpers\\Input' => __DIR__ . '/../..' . '/app/core/helpers/Input.php',
         'MyFrmwk\\App\\Core\\Helpers\\MyFrmwkException' => __DIR__ . '/../..' . '/app/core/exceptions/MyFrmwkException.php',
         'MyFrmwk\\App\\Core\\Helpers\\MySessions' => __DIR__ . '/../..' . '/app/core/helpers/MySessions.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
