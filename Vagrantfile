@@ -24,4 +24,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "apache", type: "shell", path: "./server_conf/apache.sh"
     config.vm.provision "dev_tools", type: "shell", path: "./server_conf/dev_tools.sh"
     config.vm.provision "complete", type: "shell", path: "./server_conf/complete.sh"
+
+      config.vm.provision "shell", inline: <<-SHELL2
+      echo -e "\n------------------------------------------- Installing Composer\n"
+      fromdos /vagrant/composer.sh
+      curl -s https://getcomposer.org/installer | php
+      sudo mv composer.phar /usr/local/bin/composer
+      cd /vagrant && php composer.phar install
+      SHELL2
+
 end
